@@ -2,23 +2,27 @@
 
 ## Installation de KVM
 
-
-        apt install -y qemu-system libvirt-clients libvirt-daemon-system libvirt-daemon-driver-qemu virt-manager ssh-askpass
-
+```shell
+# apt install -y qemu-system libvirt-clients libvirt-daemon-system libvirt-daemon-driver-qemu virt-manager ssh-askpass
+```
 
 Ajout de l'utilisateur dans le groupe libvirt
 
-        adduser <your user> libvirt
-
+```shell
+# adduser <your user> libvirt
+```
 
 ## Management des VM avec cockpit
 
-        apt install -y cockpit
-
+```shell
+# apt install -y cockpit
+```
 
 Une fois run, aller dans un web browser et aller sur :
 
-        http://<ip server ou name server>:9090
+```shell
+http://<ip server ou name server>:9090
+```
 
 
 Documentation
@@ -43,11 +47,15 @@ ERROR Requested operation is not valid: network 'default' is not active Domain i
 
 Il faut créer une instance DHCP et DNS. Pour cela, on on configure virsh en defaut
 
-        virsh net-start default 
+```shell
+# virsh net-start default 
+```
 
 Puis on redémarre le service libvirtd
 
-        systemctl restart libvirtd
+```shell
+# systemctl restart libvirtd
+```
 
 On accede a l'interface d'administration de la vm en cliquant dessus.
 
