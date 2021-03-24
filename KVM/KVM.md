@@ -15,7 +15,7 @@ Ajout de l'utilisateur dans le groupe libvirt
 ## Management des VM avec cockpit
 
 ```shell
-# apt install -y cockpit
+# apt install -y cockpit cockpit-machines
 ```
 
 Une fois run, aller dans un web browser et aller sur :
