@@ -109,16 +109,16 @@ ALTER TABLE <tablename> CONSTRAINT fk_name FOREIGN KEY (<colonnename>) REFERENCE
 ## Jointure 
 
 ### Définition
-* INNER JOIN | jointure interne pour retourner les enregistrements quand la condition est vrai dans les 2 tables. C�est l�une des jointures les plus communes. 
-* LEFT JOIN (ou LEFT OUTER JOIN) | jointure externe pour retourner tous les enregistrements de la table de gauche (LEFT = gauche) m�me si la condition n�est pas v�rifi� dans l�autre table.
-* RIGHT JOIN (ou RIGHT OUTER JOIN) | jointure externe pour retourner tous les enregistrements de la table de droite (RIGHT = droite) m�me si la condition n�est pas v�rifi� dans l�autre table.
-* FULL JOIN (ou FULL OUTER JOIN) | jointure externe pour retourner les r�sultats quand la condition est vrai dans au moins une des 2 tables.
-* CROSS JOIN | jointure crois�e permettant de faire le produit cart�sien de 2 tables. En d�autres mots, permet de joindre chaque lignes d�une table avec chaque lignes d�une seconde table. Attention, le nombre de r�sultats est en g�n�ral tr�s �lev�.
+* INNER JOIN | jointure interne pour retourner les enregistrements quand la condition est vrai dans les 2 tables. C'est l'une des jointures les plus communes. 
+* LEFT JOIN (ou LEFT OUTER JOIN) | jointure externe pour retourner tous les enregistrements de la table de gauche (LEFT = gauche) même si la condition n'est pas vérifié dans l'autre table.
+* RIGHT JOIN (ou RIGHT OUTER JOIN) | jointure externe pour retourner tous les enregistrements de la table de droite (RIGHT = droite) même si la condition n'est pas vérifié dans l'autre table.
+* FULL JOIN (ou FULL OUTER JOIN) | jointure externe pour retourner les résultats quand la condition est vrai dans au moins une des 2 tables.
+* CROSS JOIN | jointure croisée permettant de faire le produit cartésien de 2 tables. En d'autres mots, permet de joindre chaque lignes d'une table avec chaque lignes d'une seconde table. Attention, le nombre de résultats est en général très élevé.
 
 **cas particuliers** 
-* SELF JOIN | permet d�effectuer une jointure d�une table avec elle-m�me comme si c��tait une autre table.
-* NATURAL JOIN | jointure naturelle entre 2 tables s�il y a au moins une colonne qui porte le m�me nom entre les 2 tables SQL
-* UNION JOIN  | jointure d�union
+* SELF JOIN | permet d'effectuer une jointure d'une table avec elle-même comme si c'était une autre table.
+* NATURAL JOIN | jointure naturelle entre 2 tables s'il y a au moins une colonne qui porte le même nom entre les 2 tables SQL
+* UNION JOIN  | jointure d'union
 
 **Sans intersection** | on va appliquer une clause WHERE pour exclure les intersections
 * LEFT JOIN (sans intersection) | LEFT JOIN ... WHERE table.cle IS NULL
