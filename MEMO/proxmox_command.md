@@ -5,11 +5,19 @@
 ```
 
 ```shell
+# qm status <vm id>
+```
+
+```shell
 # qm start <vm id>
 ```
 
 ```shell
 # qm stop <vm id>
+```
+
+```shell
+# qm shutdown <vm id>
 ```
 
 ```shell
