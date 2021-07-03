@@ -1,0 +1,2 @@
+alias ll='ls $LS_OPTIONS -l'
+export PS1="\[\e[01;31m\]\u\[\e[0m\]\[\e[01;31m\]@\[\e[0m\]\[\e[01;31m\]\h\[\e[0m\]:\[\e[01;37m\]\w\[\e[0m\] \[\e[01;37m\]\\$\[$(tput sgr0)\] "
