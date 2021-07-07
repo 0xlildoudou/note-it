@@ -54,14 +54,14 @@ Ici, nous allons ouvrir le port 22 (port par défaut de SSH)
 ```shell
 sudo iptables -A INPUT -p tcp -i eth0 --dport 22 -j ACCEPT
 ```
-| Argument | Explication          |
-| :--------------- |:---------------|
-| iptables  | Appel de la commande  |
-| -A INPUT | Ajoute une règle à la chaîne INPUT pour le trafic entrant   |
-| -p tcp | Définis le protocole tcp |
-| -i eth0  | Défini l'interface ethernet |
-| --dport 22 | Défini le port 22 (peut être remplacer par --dport ssh) |
-| -j ACCEPT | Authorise le trafic |
+| Argument   | Explication                                               |
+| :--------- | :-------------------------------------------------------- |
+| iptables   | Appel de la commande                                      |
+| -A INPUT   | Ajoute une règle à la chaîne INPUT pour le trafic entrant |
+| -p tcp     | Définis le protocole tcp                                  |
+| -i eth0    | Défini l'interface ethernet                               |
+| --dport 22 | Défini le port 22 (peut être remplacer par --dport ssh)   |
+| -j ACCEPT  | Authorise le trafic                                       |
 
 ### Supprimer une règle
 D'abord on liste les règles :
@@ -89,11 +89,11 @@ Si on souhaite supprimer la règle pour authoriser le ssh (ligne 2)
 ```shell
 iptables -D INPUT 2
 ```
-| Argument | Explication          |
-| :--------------- |:---------------|
-| iptables  | Appel de la commande  |
+| Argument | Explication                          |
+| :------- | :----------------------------------- |
+| iptables | Appel de la commande                 |
 | -D INPUT | Supprime la règle de la chaîne INPUT |
-| 2  | Défini la ligne a supprimer |
+| 2        | Défini la ligne a supprimer          |
 
 ## Sauvegarder les règles au démarrage
 
