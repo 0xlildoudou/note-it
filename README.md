@@ -1,5 +1,15 @@
 # note-it
     .
+    ├── CYBER
+    │   ├── EXPLOIT-DB
+    │   │   ├── Dockerfile
+    │   │   └── README.md
+    │   ├── FIREWALL
+    │   │   ├── firewall.service
+    │   │   └── setup-firewall.sh
+    │   └── NMAP
+    │       ├── Dockerfile
+    │       └── README.md
     ├── DOTFILES
     │   ├── bashrc_root
     │   ├── bashrc_user
@@ -26,4 +36,6 @@
     │   └── sql_command.md
     └── UNIX
         ├── disk_resize.md
-        └── tree_unix.md
+        ├── tree_unix.md
+        └── unix_permission.md
+    
